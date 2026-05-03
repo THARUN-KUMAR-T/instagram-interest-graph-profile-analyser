@@ -1,0 +1,51 @@
+# 5 interest "branches" for sample diversity
+# Branch 1: Marvel actors
+robertdowneyjr
+chrishemsworth
+scarlettjohansson
+chrisevans
+markruffalo
+tomholland2013
+jeremyrenner
+brielarson
+paul_rudd
+doncheadle
+
+# Branch 2: DC actors
+gal_gadot
+jasonmomoa
+henrycavill
+benaffleck
+ezramiller
+rayfishr
+margotrobbieofficial
+
+# Branch 3: Musicians
+dualipa
+billieeilish
+theweeknd
+taylorswift
+harrystyles
+brunomars
+badbunnypr
+edsheeran
+
+# Branch 4: Sports
+cristiano
+leomessi
+lewishamilton
+serenawilliams
+neymarjr
+k.mbappe
+kingjames
+stephencurry30
+
+# Branch 5: Creators / Brands
+natgeo
+nasa
+mrbeast
+nike
+gucci
+lego
+airbnb
+spotify
