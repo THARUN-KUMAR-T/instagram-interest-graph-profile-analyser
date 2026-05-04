@@ -1,5 +1,17 @@
 # Instagram Interest Graph
 
+Long story short, this repo lets you deep-dive into someone's interests if they're a heavy Instagram user—you just need to supply your cookies and make sure you follow them (or they're public) to grab their following list.
+### You might need an AI agent
+The scripts work perfectly on their own, but you'll definitely want to use an AI agent to fully automate the manual search and execution—I used OpenCode + DeepSeek to run the whole pipeline (took about 3 hours without hitting the limits of instagram) and Antigravity with the Gemini API for the handle lookups, search manually each guy and categorise.
+
+---
+
+### ⚠️ Disclaimer for Educational Use Only
+**This repository is strictly for educational purpose.** 
+Automated scraping and the use of undocumented private APIs directly violates Meta's/Instagram's Terms of Service. Using this code with your personal session cookies carries a high risk of your Instagram account being temporarily restricted or permanently banned. The author is not responsible for any account bans or legal repercussions resulting from the use of this code. 
+
+---
+
 **Build an interest profile from any Instagram account's following list.**
 
 Given a list of accounts someone follows, this pipeline:
@@ -10,6 +22,15 @@ Given a list of accounts someone follows, this pipeline:
 5. Categorizes everything (actor, musician, athlete, chef, etc.)
 6. Generates an interactive HTML graph
 7. Outputs movie/series watchlists and Spotify playlist prompts
+
+---
+## ✨ Features
+
+* **Smart Rate-Limit Handling:** Utilizes checkpoints after every request, 90-second batch cooldowns, and hybrid scraping (web meta-tags vs. authenticated API) to navigate anti-bot protections.
+* **Data Enrichment (No-Auth):** Cross-references display names with the Wikidata API to pull highly accurate occupations and filmographies/discographies without hitting Instagram's servers.
+* **Algorithmic Categorization:** Classifies accounts into niches (Actors, Musicians, Athletes, Creators, etc.) using a combination of NLP bio-parsing, Instagram's official business categories, and Wikidata entities.
+* **Graph Visualization:** Generates an interactive HTML network graph using `networkx` and `pyvis` to visually map out user interests and community clusters.
+* **Actionable Intelligence:** Automatically compiles a movie/TV watchlist based on the specific actors followed and generates an AI prompt for Spotify using artists found to build a custom playlist that you can use to know more about them.
 
 ---
 
